@@ -1,0 +1,13 @@
+{
+  "name": "CopyWithTiming",
+  "description": "Help your faster copy link to video with timing",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
